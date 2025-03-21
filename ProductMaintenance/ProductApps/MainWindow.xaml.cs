@@ -34,7 +34,15 @@ namespace ProductApps
                 cProduct = new Product(Convert.ToDecimal(priceTextBox.Text), Convert.ToInt16(quantityTextBox.Text));
                 cProduct.calTotalPayment();
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
+
+
+                // Add $25 delivery charge
+                decimal deliveryCharge = 25.00m;
+                decimal totalCharge = cProduct.TotalPayment + deliveryCharge;
+                totalChargeTextBox.Text = totalCharge.ToString("C"); // Shows currency format
+
             }
+
             catch (FormatException)
             {
                 MessageBox.Show("Enter data again", "Data Entry Error");
@@ -47,6 +55,7 @@ namespace ProductApps
             priceTextBox.Text = "";
             quantityTextBox.Text = "";
             totalPaymentTextBlock.Text = "";
+            totalChargeTextBox.Text = ""; // Also clear total charge
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
