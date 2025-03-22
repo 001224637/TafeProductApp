@@ -41,6 +41,12 @@ namespace ProductApps
                 decimal totalCharge = cProduct.TotalPayment + deliveryCharge;
                 totalChargeTextBox.Text = totalCharge.ToString("C"); // Shows currency format
 
+
+                // Calculate wrapping charge
+                decimal wrappingCharge = 5.00m;
+                decimal totalChargeWithWrap = totalCharge + wrappingCharge;
+                wrapChargeTextBox.Text = totalChargeWithWrap.ToString("C"); // Shows currency format
+
             }
 
             catch (FormatException)

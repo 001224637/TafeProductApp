@@ -19,6 +19,10 @@
         <TextBlock x:Name="totalChargeTextBox" HorizontalAlignment="Center" Height="23" Margin="199,222,199,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.287,0.512"/>
 
 
+        <!-- Wrapping Charge -->
+        <Label Content="Total Charge after adding &#xA;the wrap charge ($5):" HorizontalAlignment="Left" Height="40" Margin="46,250,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBlock x:Name="wrapChargeTextBox" HorizontalAlignment="Center" Height="23" Margin="0,258,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.86,1.093"/>
+
 
     </Grid>
 </Window>
