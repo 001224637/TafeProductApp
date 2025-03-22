@@ -15,14 +15,16 @@
         <Button Name="clearButton" Content="C_lear" HorizontalAlignment="Left" Height="34" Margin="327,209,0,0" VerticalAlignment="Top" Width="122" Click="clearButton_Click"/>
         <Button Name="closeButton" Content="Cl_ose" HorizontalAlignment="Left" Height="34" Margin="327,264,0,0" VerticalAlignment="Top" Width="122" Click="closeButton_Click"/>
         <!-- NEW: Delivery charge UI -->
-        <Label Content="Total Charge after adding &#xA;the delivery charge ($25):" HorizontalAlignment="Left" Height="40" Margin="46,222,0,0" VerticalAlignment="Top" Width="153"/>
-        <TextBlock x:Name="totalChargeTextBox" HorizontalAlignment="Center" Height="23" Margin="199,222,199,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.287,0.512"/>
+        <Label Content="Total Charge after adding &#xA;the delivery charge ($25):" HorizontalAlignment="Left" Height="40" Margin="48,190,0,0" VerticalAlignment="Top" Width="154"/>
+        <TextBlock x:Name="totalChargeTextBox" HorizontalAlignment="Center" Height="23" Margin="0,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.287,0.512"/>
 
 
         <!-- Wrapping Charge -->
-        <Label Content="Total Charge after adding &#xA;the wrap charge ($5):" HorizontalAlignment="Left" Height="40" Margin="46,250,0,0" VerticalAlignment="Top" Width="153"/>
-        <TextBlock x:Name="wrapChargeTextBox" HorizontalAlignment="Center" Height="23" Margin="0,258,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.86,1.093"/>
+        <Label Content="Total Charge after adding &#xA;the wrap charge ($5):" HorizontalAlignment="Left" Height="40" Margin="46,235,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBlock x:Name="wrapChargeTextBox" HorizontalAlignment="Center" Height="22" Margin="0,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.86,1.093"/>
 
+        <Label Content="Total Charge After GST @10%:" HorizontalAlignment="Left" Margin="46,276,0,0" VerticalAlignment="Top" Width="172" Height="39"/>
+        <TextBlock x:Name="gstChargeTextBox" HorizontalAlignment="Left" Height="23" Margin="218,281,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

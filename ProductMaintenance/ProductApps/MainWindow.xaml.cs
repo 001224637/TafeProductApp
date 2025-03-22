@@ -47,7 +47,12 @@ namespace ProductApps
                 decimal totalChargeWithWrap = totalCharge + wrappingCharge;
                 wrapChargeTextBox.Text = totalChargeWithWrap.ToString("C"); // Shows currency format
 
+                // Step 4: GST
+                decimal totalChargeWithGST = totalChargeWithWrap * 1.1m;
+                gstChargeTextBox.Text = totalChargeWithGST.ToString("C");
+
             }
+
 
             catch (FormatException)
             {
